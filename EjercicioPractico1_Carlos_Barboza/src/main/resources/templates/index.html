@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{base.html :: head}"></head>
+<body>
+    <div th:replace="~{base.html :: header}"></div>
+    <div th:replace="~{base.html :: nav}"></div>
+    <main th:replace="~{base.html :: content}">
+        <h2>Bienvenido a la Biblioteca</h2>
+        <p>Somos una biblioteca dedicada a la educación y el aprendizaje.</p>
+        <h3>Nuevo Libro: Cien años de soledad</h3>
+        <p>Autor: Gabriel García Márquez, Publicado: 1967</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+    </main>
+    <div th:replace="~{base.html :: footer}"></div>
+</body>
+</html>

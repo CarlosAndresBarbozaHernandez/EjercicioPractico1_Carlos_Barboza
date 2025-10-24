@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{base.html :: head}">
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <div th:replace="~{base.html :: header}"></div>
+    <div th:replace="~{base.html :: nav}"></div>
+    <main th:replace="~{base.html :: content}">
+        <h2>Lista de Libros</h2>
+        <ul>
+            <li>1. Cien años de soledad - Gabriel García Márquez</li>
+            <li>2. Breves respuestas - Stephen Hawking</li>
+        </ul>
+        <a href="/libros/agregar">Agregar Libro</a>
+    </main>
+    <div th:replace="~{base.html :: footer}"></div>
+</body>
+</html>

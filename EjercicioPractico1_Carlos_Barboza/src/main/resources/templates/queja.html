@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{base.html :: head}">
+    <title>Quejas y Sugerencias</title>
+</head>
+<body>
+    <div th:replace="~{base.html :: header}"></div>
+    <div th:replace="~{base.html :: nav}"></div>
+    <main th:replace="~{base.html :: content}">
+        <h2>Enviar Queja o Sugerencia</h2>
+        <form>
+            <label>Nombre: <input type="text" name="nombre"></label><br>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Teléfono: <input type="text" name="telefono"></label><br>
+            <label>Tipo: 
+                <select name="tipo">
+                    <option value="QUEJA">Queja</option>
+                    <option value="SUGERENCIA">Sugerencia</option>
+                    <option value="CONSULTA">Consulta</option>
+                </select>
+            </label><br>
+            <label>Asunto: <input type="text" name="asunto"></label><br>
+            <label>Mensaje: <textarea name="mensaje"></textarea></label><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <div th:replace="~{base.html :: footer}"></div>
+</body>
+</html>

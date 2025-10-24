@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title} + ' - Biblioteca'">Título por Defecto</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Fidélitas</h1>
+    </header>
+    <nav>
+        <a th:href="@{/}">Inicio</a>
+        <a th:href="@{/libros}">Libros</a>
+        <a th:href="@{/quejas}">Quejas/Sugerencias</a>
+    </nav>
+    <main th:fragment="content">
+        <!-- Contenido dinámico irá aquí -->
+    </main>
+    <footer>
+        <p>&copy; 2025 Universidad Fidélitas</p>
+    </footer>
+</body>
+</html>
